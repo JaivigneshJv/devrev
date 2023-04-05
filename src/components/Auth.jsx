@@ -9,10 +9,13 @@ const Auth = () => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
         setAuthUser(user);
+        // localStorage.setItem("email", JSON.stringify(user.email));
       } else {
         setAuthUser(null);
       }
     });
+
+    // localStorage.setItem("email", JSON.stringify(authuser.email));
 
     return () => {
       listen();
@@ -31,15 +34,16 @@ const Auth = () => {
     <div className="signincon">
       {authuser ? (
         <>
-          <p>Signed In as {authuser.email}</p>
-          <button onClick={userSignout}>Sign out</button>
+          <p>Welcome, {authuser.email}!</p>
+          <p>Binge watching made easy ;)</p>
+          {/* <button onClick={userSignout}>Sign out</button> */}
         </>
       ) : (
         <p>signed out</p>
       )}
-      <button className="link-btn">
-        <Link to="/landing">CLICK ME TO BROWSE </Link>{" "}
-      </button>
+      <Link to="/">
+        <button>BROWSE MOVIES</button>
+      </Link>
     </div>
   );
 };

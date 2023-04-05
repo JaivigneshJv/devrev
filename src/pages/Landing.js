@@ -1,17 +1,25 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DataContext } from "../context/DataProvider";
+import { useNavigate } from "react-router-dom";
 import Row from "../components/Row";
 import requests from "../imdb/requests";
 import Banner from "../components/Banner";
 import Nav from "../components/Nav";
 
 function Landing() {
+  const nav = useNavigate();
   const { User, setUser } = useContext(DataContext);
-  // console.log(User);
+  const email = localStorage.getItem("email");
+  console.log(email);
+  useEffect(() => {
+    if (!email) {
+      nav("/signin");
+    }
+  }, []);
+
   return (
     <div className="row">
-        <Nav />
-        
+      <Nav />
       <Banner />
       <Row title="TOP RATED" fetchUrl={requests.fetchTopRated} isLargeRow />
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending} />

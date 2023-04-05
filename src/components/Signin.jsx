@@ -15,12 +15,12 @@ const Signin = (props) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userC) => {
         props.onFormSwitch("auth");
-        //try
-        console.log(userC.user.email);
+        // console.log(userC.user.email);
         setUser(userC.user.email);
+        localStorage.setItem("email", JSON.stringify(userC.user.email));
       })
       .catch((e) => {
-        toast.info(e.code); //niceeeeeee
+        toast.info(e.code);
       });
   };
 

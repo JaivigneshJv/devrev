@@ -13,6 +13,9 @@ const Signup = (props) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userC) => {
         console.log(userC);
+        toast.info("Account Created Successfully Login");
+        
+        props.onFormSwitch("login");
       })
       .catch((e) => {
         console.log(e);
