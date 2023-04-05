@@ -1,0 +1,68 @@
+//https://api.themoviedb.org/3/genre/list?api_key=
+
+{
+  "genres": [
+    { "id": 28, "name": "Action" },
+
+    { "id": 12, "name": "Adventure" },
+
+    { "id": 16, "name": "Animation" },
+
+    { "id": 35, "name": "Comedy" },
+
+    { "id": 80, "name": "Crime" },
+
+    { "id": 99, "name": "Documentary" },
+
+    { "id": 18, "name": "Drama" },
+
+    { "id": 10751, "name": "Family" },
+
+    { "id": 14, "name": "Fantasy" },
+
+    { "id": 36, "name": "History" },
+
+    { "id": 27, "name": "Horror" },
+
+    { "id": 10402, "name": "Music" },
+
+    { "id": 9648, "name": "Mystery" },
+
+    { "id": 10749, "name": "Romance" },
+
+    { "id": 878, "name": "Science Fiction" },
+
+    { "id": 10770, "name": "TV Movie" },
+
+    { "id": 53, "name": "Thriller" },
+
+    { "id": 10752, "name": "War" },
+
+    { "id": 37, "name": "Western" }
+  ]
+}
+
+//comedy
+
+{
+    "page":1,"results":
+    [{"adult":false,"backdrop_path":"/a2tys4sD7xzVaogPntGsT1ypVoT.jpg","genre_ids":[53,35,80],"id":804150,"original_language":"en","original_title":"Cocaine Bear","overview":"Inspired by a true story, an oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.","popularity":2252.337,"poster_path":"/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg","release_date":"2023-02-22","title":"Cocaine Bear","video":false,"vote_average":6.6,"vote_count":637},
+    {"adult":false,"backdrop_path":"/vSUls0b7dNhC7tJoExF1MBYWWyh.jpg","genre_ids":[16,35,10751,12,14],"id":816904,"original_language":"es","original_title":"Momias","overview":"Through a series of unfortunate events, three mummies end up in present-day London and embark on a wacky and hilarious journey in search of an old ring belonging to the Royal Family, stolen by ambitious archaeologist Lord Carnaby.","popularity":2491.772,"poster_path":"/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg","release_date":"2023-01-05","title":"Mummies","video":false,"vote_average":7.2,"vote_count":84},
+    {"adult":false,"backdrop_path":"/ouB7hwclG7QI3INoYJHaZL4vOaa.jpg","genre_ids":[16,10751,14,12,35],"id":315162,"original_language":"en","original_title":"Puss in Boots: The Last Wish","overview":"Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.","popularity":1839.079,"poster_path":"/kuf6dutpsT0vSVehic3EZIqkOBt.jpg","release_date":"2022-12-07","title":"Puss in Boots: The Last Wish","video":false,"vote_average":8.3,"vote_count":5003},
+    {"adult":false,"backdrop_path":"/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg","genre_ids":[16,12,10751,14,35],"id":502356,"original_language":"en","original_title":"The Super Mario Bros. Movie","overview":"While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.","popularity":1870.298,"poster_path":"/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg","release_date":"2023-04-05","title":"The Super Mario Bros. Movie","video":false,"vote_average":8.3,"vote_count":26},
+    {"adult":false,"backdrop_path":"/ql4PnvKYKaMtdx9Ck4fHY2wJphT.jpg","genre_ids":[35,18,10749],"id":32516,"original_language":"cn","original_title":"金瓶梅2 愛的奴隸","overview":"Rich and powerful Simon Qing has been schooled in the ways of sex by his virile father, but is still a virgin. That is, until he meets his first love Violetta who has fun with him all over his father’s estate. Their love does not last, so Simon embarks on a journey. Along the way he meets the comely nun Moon whom Simon deflowers and then marries. He then becomes enamored of Golden Lotus but she is married to dwarf Wu Da-Lang.","popularity":919.628,"poster_path":"/A1yymig7S0FTWv9cTtOwdI1cH5V.jpg","release_date":"2009-03-04","title":"The Forbidden Legend: Sex & Chopsticks 2","video":false,"vote_average":6,"vote_count":63},
+    {"adult":false,"backdrop_path":"/dlrWhn0G3AtxYUx2D9P2bmzcsvF.jpg","genre_ids":[878,27,35],"id":536554,"original_language":"en","original_title":"M3GAN","overview":"A brilliant toy company roboticist uses artificial intelligence to develop M3GAN, a life-like doll programmed to emotionally bond with her newly orphaned niece. But when the doll's programming works too well, she becomes overprotective of her new friend with terrifying results.","popularity":713.591,"poster_path":"/d9nBoowhjiiYc4FBNtQkPY7c11H.jpg","release_date":"2022-12-28","title":"M3GAN","video":false,"vote_average":7.4,"vote_count":2262},
+    {"adult":false,"backdrop_path":"/wybmSmviUXxlBmX44gtpow5Y9TB.jpg","genre_ids":[28,35,14],"id":594767,"original_language":"en","original_title":"Shazam! Fury of the Gods","overview":"Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.","popularity":703.69,"poster_path":"/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg","release_date":"2023-03-15","title":"Shazam! Fury of the Gods","video":false,"vote_average":6.8,"vote_count":325},
+    {"adult":false,"backdrop_path":"/pxJbfnMIQQxCrdeLD0zQnWr6ouL.jpg","genre_ids":[28,35,53],"id":1077280,"original_language":"en","original_title":"Die Hart","overview":"Kevin Hart - playing a version of himself - is on a death-defying quest to become an action star. And with a little help from John Travolta, Nathalie Emmanuel, and Josh Hartnett - he just might pull it off.","popularity":666.115,"poster_path":"/1EnBjTJ5utgT1OXYBZ8YwByRCzP.jpg","release_date":"2023-02-22","title":"Die Hart","video":false,"vote_average":6.1,"vote_count":231},
+    {"adult":false,"backdrop_path":"/2rVkDZFLN6DI5PAoraoe9m4IRMN.jpg","genre_ids":[12,14,35],"id":493529,"original_language":"en","original_title":"Dungeons & Dragons: Honor Among Thieves","overview":"A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.","popularity":606.071,"poster_path":"/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg","release_date":"2023-03-23","title":"Dungeons & Dragons: Honor Among Thieves","video":false,"vote_average":7.5,"vote_count":182},
+    {"adult":false,"backdrop_path":"/zGoZB4CboMzY1z4G3nU6BWnMDB2.jpg","genre_ids":[28,35,10749],"id":758009,"original_language":"en","original_title":"Shotgun Wedding","overview":"Darcy and Tom gather their families for the ultimate destination wedding but when the entire party is taken hostage, “’Til Death Do Us Part” takes on a whole new meaning in this hilarious, adrenaline-fueled adventure as Darcy and Tom must save their loved ones—if they don’t kill each other first.","popularity":530.923,"poster_path":"/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg","release_date":"2022-12-28","title":"Shotgun Wedding","video":false,"vote_average":6.4,"vote_count":718},
+    {"adult":false,"backdrop_path":"/v2LilmCylr3bL9TCZSj6syjowZh.jpg","genre_ids":[35,18],"id":937278,"original_language":"en","original_title":"A Man Called Otto","overview":"When a lively young family moves in next door, grumpy widower Otto Anderson meets his match in a quick-witted, pregnant woman named Marisol, leading to an unlikely friendship that turns his world upside down.","popularity":380.6,"poster_path":"/130H1gap9lFfiTF9iDrqNIkFvC9.jpg","release_date":"2022-12-28","title":"A Man Called Otto","video":false,"vote_average":7.9,"vote_count":947},
+    {"adult":false,"backdrop_path":"/bT3IpP7OopgiVuy6HCPOWLuaFAd.jpg","genre_ids":[35,9648,28],"id":638974,"original_language":"en","original_title":"Murder Mystery 2","overview":"After starting their own detective agency, Nick and Audrey Spitz land a career-making case when their billionaire pal is kidnapped from his wedding.","popularity":647.311,"poster_path":"/5wpVy0KUWzDKDKgrayM0Q8lXOiK.jpg","release_date":"2023-03-26","title":"Murder Mystery 2","video":false,"vote_average":6.6,"vote_count":331},
+    {"adult":false,"backdrop_path":"/nWs0auTqn2UaFGfTKtUE5tlTeBu.jpg","genre_ids":[10751,35,14],"id":668482,"original_language":"en","original_title":"Roald Dahl's Matilda the Musical","overview":"An extraordinary young girl discovers her superpower and summons the remarkable courage, against all odds, to help others change their stories, whilst also taking charge of her own destiny. Standing up for what's right, she's met with miraculous results.","popularity":438.409,"poster_path":"/ga8R3OiOMMgSvZ4cOj8x7prUNYZ.jpg","release_date":"2022-11-25","title":"Roald Dahl's Matilda the Musical","video":false,"vote_average":6.8,"vote_count":546},
+    {"adult":false,"backdrop_path":"/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg","genre_ids":[14,28,35],"id":616037,"original_language":"en","original_title":"Thor: Love and Thunder","overview":"After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.","popularity":402.455,"poster_path":"/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg","release_date":"2022-07-06","title":"Thor: Love and Thunder","video":false,"vote_average":6.6,"vote_count":5687},
+    {"adult":false,"backdrop_path":"/zJzqLtEYg6QkIAghPGBEuPhhzyU.jpg","genre_ids":[35],"id":868985,"original_language":"es","original_title":"¡Que Viva México!","overview":"After his grandfather's death, a man travels with his wife and kids to his hometown, where chaos ensues with his relatives over the inheritance.","popularity":350.438,"poster_path":"/ieyUpr5ES9QEz1cn4clCnBf9XJl.jpg","release_date":"2023-03-23","title":"¡Que Viva México!","video":false,"vote_average":4.7,"vote_count":5},
+    {"adult":false,"backdrop_path":"/9j0V8Fw5u4cv9cESUXUmTGmpXU5.jpg","genre_ids":[16,10751,35],"id":1058732,"original_language":"en","original_title":"The Simpsons Meet the Bocellis in Feliz Navidad","overview":"This Christmas, Homer surprises Marge with the ultimate gift: an unforgettable performance from Italian opera superstar Andrea Bocelli and his children Matteo and Virginia.","popularity":382.523,"poster_path":"/9rJFKvYvSyQ3HoTl1gcU55FOzYi.jpg","release_date":"2022-12-15","title":"The Simpsons Meet the Bocellis in Feliz Navidad","video":false,"vote_average":5.2,"vote_count":33},
+    {"adult":false,"backdrop_path":"/yEQqrW61rwNuVRHTjgHOAU4dXNE.jpg","genre_ids":[28,12,10751,35],"id":675353,"original_language":"en","original_title":"Sonic the Hedgehog 2","overview":"After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.","popularity":385.007,"poster_path":"/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg","release_date":"2022-04-08","title":"Sonic the Hedgehog 2","video":false,"vote_average":7.6,"vote_count":3809},
+    {"adult":false,"backdrop_path":"/rbUPJoJJquPbX1AiV6GzOqcmJME.jpg","genre_ids":[28,16,35,14,27,10752],"id":587092,"original_language":"es","original_title":"Unicorn Wars","overview":"An army of bear cubs train and indoctrinate young recruits for the war against the unicorns, which threatens the safety of the cubs. Brothers Bluet and Tubby, along with a group of inexperienced cadets, are sent on a dangerous mission to save the Magic Forest, where the unicorns live, and start a terrible battle.","popularity":319.053,"poster_path":"/kEEFo2CpBP1m7zjZzIHG0P6v6ma.jpg","release_date":"2022-10-21","title":"Unicorn Wars","video":false,"vote_average":6.5,"vote_count":31},
+    {"adult":false,"backdrop_path":"/isGINC82PZmMblEJP2rBAvSlX37.jpg","genre_ids":[16,10751,12,35],"id":599019,"original_language":"ru","original_title":"Большое путешествие. Специальная доставка","overview":"It has been a year since Mic Mic and Oscar returned from their incredible adventure. And now, after a diabolical plan by Vulture to sabotage the delivery of the Grizzly cub to his opponent in the American presidential elections, Mic Mic, Oscar, Panda teenager and Stork set off on another great adventure as they ride a zeppelin to return little Grizzly to its rightful parents and save the American elections and the whole continent from an erupting volcano.","popularity":336.876,"poster_path":"/dabXVfrAFfhDte8XVemom3mTJog.jpg","release_date":"2022-10-07","title":"Big Trip 2: Special Delivery","video":false,"vote_average":6.5,"vote_count":54},
+    {"adult":false,"backdrop_path":"/vXjpwkXPirBmgdEpIknfN8ziDD.jpg","genre_ids":[16,12,14,35],"id":947938,"original_language":"ru","original_title":"Мальчик-дельфин","overview":"When a plane crashes at sea, dolphins rescue a little boy and raise him as family. He lives a carefree life beneath the waves until an evil monster seizes power over the underwater world. The boy is banished to dry land, where a kind-hearted captain takes him in. With the captain’s help, the boy sets out on a journey to solve the mystery of his true identity.","popularity":318.568,"poster_path":"/gISoDEiaUH9BNEunmLC7FgUVaia.jpg","release_date":"2022-04-07","title":"Dolphin Boy","video":false,"vote_average":6.5,"vote_count":51}],"total_pages":5700,"total_results":113995}
