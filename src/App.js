@@ -6,6 +6,7 @@ import SignedOut from "./pages/SignedOut";
 import MovieInfo from "./components/MovieInfo";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Watchlist from "./components/Watchlist";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
     {
       path: "/:movieid",
       element: <MovieInfo />, //create
+    },
+    {
+      path: "/Watchlist",
+      element: <Watchlist />, //create
     },
   ]);
   return (

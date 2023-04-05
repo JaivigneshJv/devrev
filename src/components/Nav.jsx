@@ -16,16 +16,8 @@ function Nav() {
     setIsOpen(!isOpen);
   }
 
-  function handleAccountClick() {
-    // handle click for account button
-  }
-
   function handleLogoutClick() {
     localStorage.clear("email");
-  }
-
-  function handleWatchlistClick() {
-    // handle click for watch list button
   }
 
   // function handleLogout() {
@@ -50,7 +42,9 @@ function Nav() {
 
   return (
     <div className={`nav ${show && "nav_black"}`}>
-      <img className="nav_logo" src={logo} alt="Movies" />
+      <Link to="/">
+        <img className="nav_logo" src={logo} alt="Movies" />
+      </Link>
       {/* <h2 className="user_container">{email}</h2> */}
       {/* <button onClick={handleLogout} className="logout_button">
           Log out
@@ -62,13 +56,23 @@ function Nav() {
           src={logo1}
           alt="Acc"
         />
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <Link>
+            <button>Search</button>
+          </Link>
+        </div>
         {isOpen && (
           <div className="dropdown-menu">
-            <button onClick={handleAccountClick}>Account</button>
+            <Link to="/Account">
+              <button>Account</button>
+            </Link>
             <Link to="/SignedOut">
               <button onClick={handleLogoutClick}>Logout</button>
             </Link>
-            <button onClick={handleWatchlistClick}>Watch List</button>
+            <Link to="/WatchList">
+              <button>Watchlist</button>
+            </Link>
           </div>
         )}
       </div>

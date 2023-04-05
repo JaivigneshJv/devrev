@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "../imdb/axios";
 import requests from "../imdb/requests";
 import "../components/Banner.css";
+import { Link } from "react-router-dom";
+
 function Banner() {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchTrending);
-      setMovie(request.data.results[0]);
+      setMovie(request.data.results[1]);
       return request;
     }
     fetchData();
@@ -30,7 +32,9 @@ function Banner() {
           </h1>
           <div className="banner_buttons">
             <button className="banner_button">Play</button>
-            <button className="banner_button">My List</button>
+            <Link to="/Watchlist">
+              <button className="banner_button">My List</button>
+            </Link>
           </div>
           {/* <h1 className="banner_description">{movie?.overview}</h1> */}
         </div>
