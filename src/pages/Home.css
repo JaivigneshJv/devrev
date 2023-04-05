@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0 !important;
+}
+:root {
+  --toastify-color-info: black;
+  font-family: "Montserrat", sans-serif;
+}
+.Home {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #00000048, #00000025),
+    url("/src/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  align-self: center;
+}
+
+.signincon,
+.signin-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.986);
+}
+.signincon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem;
+  background-color: #030000ab;
+}
+label {
+  /* align-items: center; */
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: none;
+  /* border-radius: 1rem; */
+  background-color: rgb(11, 11, 11);
+  width: 15vw;
+  color: whitesmoke;
+  /* 
+  view width
+  border: white 1px solid; */
+}
+
+input:focus {
+  outline: 1px solid black;
+}
+
+button {
+  border: none;
+  background-color: red;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+.h2 {
+  color: white;
+}
+
+.test {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+}
