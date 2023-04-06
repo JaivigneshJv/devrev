@@ -5,6 +5,7 @@ import "../components/Banner.css";
 // import { Link } from "react-router-dom";
 import axios1 from "axios";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 function Banner(props) {
   const [movie, setMovie] = useState([]);
@@ -49,7 +50,9 @@ function Banner(props) {
             {movie?.title || movie?.name || movie?.original_name}
           </h1>
           <div className="banner_buttons">
-            <button className="banner_button">Play</button>
+            <Link to={`/watch/${movie.id}`}>
+              <button className="banner_button">Play</button>
+            </Link>
             <button className="banner_button" onClick={handleOnclicktoast}>
               My List
             </button>
