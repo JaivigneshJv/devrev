@@ -7,6 +7,7 @@ import MovieInfo from "./components/MovieInfo";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Watchlist from "./components/Watchlist";
+import SearchQ from "./components/SearchQ";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,11 +25,15 @@ function App() {
     },
     {
       path: "/:movieid",
-      element: <MovieInfo />, //create
+      element: <MovieInfo />,
     },
     {
       path: "/Watchlist",
-      element: <Watchlist />, //create
+      element: <Watchlist />,
+    },
+    {
+      path: "/search/:searchq",
+      element: <SearchQ />,
     },
   ]);
   return (

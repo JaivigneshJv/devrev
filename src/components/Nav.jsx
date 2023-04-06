@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 function Nav() {
   const email = localStorage.getItem("email");
   const [show, handleShow] = useState(false);
+
+  const [search, setSearch] = useState("");
+  const searchvalue = "/search/" + search;
   // const handleLogout = () => {
   //   localStorage.clear("email");
   // };
@@ -57,8 +60,12 @@ function Nav() {
           alt="Acc"
         />
         <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <Link>
+          <input
+            type="text"
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search"
+          />
+          <Link to={searchvalue}>
             <button>Search</button>
           </Link>
         </div>

@@ -2,18 +2,36 @@ import React, { useEffect, useState } from "react";
 import axios from "../imdb/axios";
 import requests from "../imdb/requests";
 import "../components/Banner.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import axios1 from "axios";
+import { toast } from "react-toastify";
 
-function Banner() {
+function Banner(props) {
   const [movie, setMovie] = useState([]);
+  const movieid = props.movieid;
+
+  function handleOnclicktoast() {
+    //Todo: DB connect
+    toast.info("Added to watchlist");
+  }
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchTrending);
-      setMovie(request.data.results[1]);
-      return request;
+      console.log(movieid);
+      if (movieid) {
+        const Url = `https://api.themoviedb.org/3/movie/${movieid}?api_key=19f84e11932abbc79e6d83f82d6d1045`;
+        const request = await axios1.get(Url);
+        setMovie(request.data);
+        console.log("hi");
+        return request;
+      } else {
+        const request = await axios.get(requests.fetchTrending);
+        setMovie(request.data.results[0]);
+        console.log("hi1");
+        return request;
+      }
     }
     fetchData();
-  }, []);
+  }, [requests, movieid]);
   //   console.log(movie);
 
   return (
@@ -32,9 +50,9 @@ function Banner() {
           </h1>
           <div className="banner_buttons">
             <button className="banner_button">Play</button>
-            <Link to="/Watchlist">
-              <button className="banner_button">My List</button>
-            </Link>
+            <button className="banner_button" onClick={handleOnclicktoast}>
+              My List
+            </button>
           </div>
           {/* <h1 className="banner_description">{movie?.overview}</h1> */}
         </div>
